@@ -1,0 +1,33 @@
+10.Gyak
+Insert parancsok
+Bartók Balogh Gábor
+
+Oktato tábla:
+INSERT INTO Oktato VALUES('ATZHZ7','Tanito Peter','Matek');
+INSERT INTO Oktato VALUES('HGWJL5','Tanito Kati','Egeszsegugy');
+INSERT INTO Oktato VALUES('JVAGK4','Tanito Elek','Informatikai');
+
+Targy tábla:
+INSERT INTO Targy VALUES('GEMAK-12',5,'matek','ATZHZ7');
+INSERT INTO Targy VALUES('ALMAK-10',5,'programozas','JVAGK4');
+INSERT INTO Targy VALUES('ADAT-10',5,'adatbazis','JVAGK4');
+INSERT INTO Targy VALUES('GEMAK-10',2,'analizis','ATZHZ7');
+INSERT INTO Targy VALUES('EGESZ-15',3,'anatomia','HGWJL5');
+INSERT INTO Targy VALUES('EGESZ-11',4,'biologia','HGWJL5');
+
+Hallgato tábla:
+INSERT INTO Hallgato VALUES('TZLAK6','Maros Kapos','BPI1','2000-01-04',2430,'Lak','Elk ut',10);
+INSERT INTO Hallgato VALUES('VAGLE7','Tarkos Larkos','EG6','1999-10-04',2630,'Tak','Eko ut',8);
+INSERT INTO Hallgato VALUES('IUHLP7','Kapros Markos','MA5','2001-08-25',2690,'Mak','Ezo ut',2);
+INSERT INTO Hallgato VALUES('JHKDL5','Kardos Apros','BPI2','2000-09-14',5690,'Pak','Kerp utca',9);
+INSERT INTO Hallgato VALUES('MNGJA8','Ardos Abros','MA5','1998-12-31',5697,'Jak','Felk ut',21);
+
+hallgat Tábla:
+INSERT INTO hallgat VALUES('ADAT-10','JHKDL5',2,5);
+INSERT INTO hallgat VALUES('ADAT-10','TZLAK6',4,3);
+INSERT INTO hallgat VALUES('GEMAK-10','IUHLP7',1,2);
+INSERT INTO hallgat VALUES('ALMAK-10','JHKDL5',3,4);
+INSERT INTO hallgat VALUES('EGESZ-15','VAGLE7',5,3);
+INSERT INTO hallgat VALUES('EGESZ-11','VAGLE7',5,5);
+INSERT INTO hallgat VALUES('GEMAK-12','MNGJA8',5,5);
+

@@ -1,0 +1,15 @@
+10.Gyak
+Create Table
+Bartók-Balogh Gábor
+
+
+CREATE TABLE Oktato(neptunkod varchar(10) PRIMARY KEY,nev char(50),tanszek varchar(30));
+
+CREATE TABLE Targy(kod varchar(10) PRIMARY KEY,kredit int,megnevezes varchar(30),neptunkod varchar(10));
+ALTER TABLE Targy ADD CONSTRAINT FOREIGN KEY(neptunkod) REFERENCES Oktato(neptunkod);
+
+CREATE TABLE Hallgato(neptunkod varchar(10) PRIMARY KEY,nev char(30),tankor varchar(10),szuld DATE,irszam int,varos char(50),utca char(50),hsz int);
+
+CREATE TABLE hallgat(kod varchar(10),neptunkod varchar(10),felev int,vizsgajegy int);
+ALTER TABLE hallgat ADD CONSTRAINT FOREIGN KEY(kod) REFERENCES Targy(kod);
+ALTER TABLE hallgat ADD CONSTRAINT FOREIGN KEY(neptunkod) REFERENCES Hallgato(neptunkod);
